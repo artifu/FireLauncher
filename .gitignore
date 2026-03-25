@@ -1,0 +1,6 @@
+# Diagnostic and optimization logs generated at runtime
+firetv_report_*.txt
+firetv_disabled_*.txt
+
+# macOS
+.DS_Store

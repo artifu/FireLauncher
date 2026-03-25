@@ -1,0 +1,48 @@
+# =============================================================================
+# FireLauncher — Fire TV Bloatware Reference
+# =============================================================================
+# Format: package_name | label | risk_level | notes
+#
+# Risk levels:
+#   SAFE    → No impact on core Fire TV functionality
+#   CAUTION → Disabling may affect some features — read the notes
+#   KEEP    → Do NOT disable — system critical
+# =============================================================================
+
+# --- Amazon Entertainment Apps ---
+com.amazon.mp3                            | Amazon Music              | SAFE    | Background audio streaming
+com.amazon.photos                         | Amazon Photos             | SAFE    | Photo backup service
+com.amazon.imdb.tv.android.app            | IMDb TV / Freevee         | SAFE    | Free streaming channel
+com.amazon.agora.tablets.goodreads        | Goodreads                 | SAFE    | Reading app
+com.amazon.ags.app                        | Amazon GameCircle         | SAFE    | Gaming achievements service
+com.amazon.webapp                         | Amazon WebApp             | SAFE    | Wrapper for web content
+
+# --- Amazon Shopping & Ads ---
+com.amazon.mShop.android.shopping         | Amazon Shopping           | SAFE    | Shopping app
+com.amazon.advertising.identitymanagement | Amazon Ad Identity Mgr    | SAFE    | Ad targeting service
+com.amazon.contentservice                 | Amazon Content Service    | SAFE    | Delivers sponsored content/ads
+com.amazon.device.sync                    | Amazon Device Sync        | SAFE    | Background sync service
+
+# --- Amazon Kids ---
+com.amazon.kindle.freetime                | Amazon Kids (FreeTime)    | SAFE    | Parental controls / kids mode
+
+# --- Alexa ---
+com.amazon.dee.app                        | Alexa Hands-Free          | SAFE    | Background voice listening; only disable if you don't use Alexa hands-free
+
+# --- Silk Browser ---
+com.amazon.cloud9                         | Silk Browser              | SAFE    | Amazon's built-in browser; disable if you sideloaded another
+
+# --- Prime Video Extras ---
+com.amazon.avod.thirdpartyclient.trailer  | Prime Video Trailers      | SAFE    | Autoplay trailers on home screen
+
+# --- CAUTION: Disable only if you know what you're doing ---
+com.amazon.tv.launcher                    | Fire TV Launcher          | CAUTION | Replacing this requires a working alternative launcher set first
+com.amazon.device.messaging               | ADM (Push Notifications)  | CAUTION | Disabling breaks push notifications for all apps
+com.amazon.venezia                        | Amazon Appstore            | CAUTION | Disabling prevents installing/updating apps from Amazon store
+
+# --- KEEP: Do not touch ---
+# com.amazon.avod.thirdpartyclient        | Prime Video               | KEEP    | Core app — user likely wants this
+# com.amazon.fire.tv.bugreport            | Bug Report Service        | KEEP    | System diagnostics
+# com.amazon.settings.systemsoundsplayer  | System Sounds             | KEEP    | UI audio
+# com.amazon.tv.settings                  | Fire TV Settings          | KEEP    | System settings
+# com.amazon.kindle                       | Kindle                    | KEEP    | Ebook app — user may want this

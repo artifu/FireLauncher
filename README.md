@@ -52,7 +52,7 @@ Settings → My Fire TV → About → Network
 ### 4. Clone this repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FireLauncher.git
+git clone https://github.com/artifu/FireLauncher.git
 cd FireLauncher
 chmod +x scripts/*.sh
 ```
